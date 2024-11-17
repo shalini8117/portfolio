@@ -1,0 +1,354 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:poppins;
+    line-height: 1.6;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #072f5e;
+    color: white;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+  }
+  
+  .navbar .menu ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar .menu ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar .menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+ 
+ 
+
+
+  /* section1  */
+
+  .section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+    
+  }
+
+.section .image1{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+
+}
+
+
+.section .text{
+    flex: 5;
+}
+
+.section .image1 img{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+   
+}
+.reveal {
+  animation: reveal 1s ease-out;
+}
+
+.reveal span{
+  color: #072f5e;
+  font-size: 55px;
+  animation: 1s ease-in-out;
+}
+.content1 >h2{
+  font-size:40px;
+}
+.content1>p{
+  font-size: 22px;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+ margin-left: 50px;
+  margin-bottom: 100px; 
+  /* padding: 50px 20px; */
+
+}
+
+.btn {
+  padding: 6px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.hire-btn {
+  background-color: #072f5e; 
+}
+
+.hire-btn:hover {
+  background-color:#1e5492; 
+}
+
+.download-btn {
+  background-color:#072f5e; 
+}
+
+
+
+
+
+
+/* Skills Section 2 Styling */
+.skills {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+.section-skill{
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Each Skill Item */
+.skill-item {
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.skill-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.section-title{
+  font-size: 40px;
+}
+.section-skill{
+  font-size: 22px;
+}
+
+
+/* section 3 about */
+
+.section{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin: 50px 0;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 100px;
+  
+}
+
+.section .image1{
+  flex: 2;
+  display: flex;
+  justify-content: right;
+
+}
+
+
+.section .text{
+  flex: 5;
+}
+
+.section .image1 img{
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+ 
+}
+
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-out;
+}
+.text>h2{
+  font-size: 40px;
+}
+.text>p{
+  font-size: 22px;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color:#072f5e;
+  color: white;
+  padding: 20px;
+}
+
+footer .footer-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-content form input,
+footer .footer-content form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+footer .footer-content form button {
+  padding: 10px;
+  background-color:#1e5492;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.footer-content > h3{
+  font-size: 40px;
+}
+
+
+
+
+/* section 1 */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive skill */
+@media (max-width: 768px) {
+  .skills-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill-item {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+      font-size: 1.5rem;
+  }
+
+  .skill-logo {
+      width: 50px;
+      height: 50px;
+  }
+
+  .skill-item h3 {
+      font-size: 1rem;
+  }
+  .button{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* section 3*/
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+   }
+   .menu{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+   }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .content .text,
+  .content .image {
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  footer .footer-content form input,
+  footer .footer-content form textarea {
+    width: 100%;
+  }
+}
